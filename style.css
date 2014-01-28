@@ -7,7 +7,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 @font-face {
 	font-family: "Proxima Nova";
-	src: url(ProximaNova-Light.otf);
+	src: url(fonts/ProximaNova-Regular.otf);
 }
 
 body {
@@ -47,11 +47,11 @@ footer a {
 }
 
 footer a:nth-child(1), footer a:nth-child(4) {
-	width:132px;
+	width:135px;
 } 
 
 footer a:nth-child(2), footer a:nth-child(3) {
-	width:159px;
+	width:160px;
 } 
 
 footer a:nth-child(4), footer a:last-child {
