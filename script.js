@@ -1,9 +1,11 @@
 $(function() {
 
-	renderLatestMix()
-	renderLatestTrack()
+	
 
-	$('header, main').fadeIn(2000)
+	$('header, main').fadeIn(2000, function() {
+		renderLatestMix()
+		renderLatestTrack()
+	})
 })
 
 function renderLatestMix() {
