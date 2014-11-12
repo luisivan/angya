@@ -1,16 +1,14 @@
 $(function() {
 
-	
+	renderLatestMix()
+	renderLatestTrack()
 
-	$('header, main').fadeIn(2000, function() {
-		renderLatestMix()
-		renderLatestTrack()
+	$('header, main').fadeIn(1500, function() {
+		$('iframe').css('visibility','visible').hide().fadeIn('slow')
 	})
 })
 
 function renderLatestMix() {
-
-	// http%3A%2F%2Fwww.mixcloud.com%2Fangya%2Fangya-mixes-014%2F
 
 	var iframeUrl = 'http://www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com{{angyaMix}}&amp;embed_uuid=6f201763-4e8b-4bc3-98c0-c98cc2beb463&amp;replace=0&amp;hide_cover=1&amp;stylecolor=ffffff&amp;embed_type=widget_standard&amp;hide_tracklist=1'
 

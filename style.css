@@ -99,6 +99,7 @@ footer {
 
 iframe {
 	width: 49%;
+	visibility: hidden;
 }
 
 iframe#mixcloud {
