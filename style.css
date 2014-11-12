@@ -63,6 +63,7 @@ footer a {
 	display: inline-block;
 	background-repeat: no-repeat;
 	background-position: center;
+	padding: 0 40px;
 }
 
 footer #social_t {
