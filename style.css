@@ -21,7 +21,6 @@ body {
 header {
 	margin: auto;
 	text-align: center;
-	margin-top: 10px;
 	display: none;
 }
 
@@ -41,11 +40,13 @@ a {
 }
 
 footer {
-	margin-top: 60px;
-	margin-bottom: 70px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	text-align: center;
 }
 
-footer a {
+/*footer a {
 	background:#4E555D;
 	border-radius: 5px;
 	text-decoration: none;
@@ -54,9 +55,25 @@ footer a {
 	display: inline-block;
 	text-align: center;
 	margin-right: 5px;
+}*/
+
+footer a {
+	width: 72px;
+	height: 72px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-footer a:nth-child(1), footer a:nth-child(4) {
+footer #social_t {
+	background-image: url(img/twitter.png);
+}
+
+footer #social_s {
+	background-image: url(img/soundcloud.png);
+}
+
+/*footer a:nth-child(1), footer a:nth-child(4) {
 	width:134px;
 } 
 
@@ -71,4 +88,18 @@ footer a:nth-child(4), footer a:last-child {
 footer a:last-child {
 	margin-top:17px;
 	width:100%;
+}*/
+
+/*iframe#mixcloud {
+	margin-bottom: 30px;
+}*/
+
+iframe#mixcloud {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+iframe#soundcloud {
+	margin-bottom: 100px;
 }
