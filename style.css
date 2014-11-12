@@ -22,6 +22,7 @@ header {
 	margin: auto;
 	text-align: center;
 	display: none;
+	margin-top: -30px;
 }
 
 header img {
@@ -102,5 +103,5 @@ iframe#mixcloud {
 }
 
 iframe#soundcloud {
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 }
