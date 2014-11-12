@@ -19,35 +19,30 @@ body {
 }
 
 header {
+	width: 1000px;
 	margin: auto;
-	text-align: center;
 	display: none;
 	margin-top: -30px;
+	position: relative;
 }
 
 header img {
 	height: 466px;
+	margin-left: -140px;
+	position: relative;
+	z-index: -1;
 }
 
-main {
-	width: 620px;
-	margin: auto;
-	margin-top: -115px;
-	display: none;
+nav {
+	position: absolute;
+	top: 150px;
+	right: 0;
 }
 
-a {
-	color: white;
-}
-
-footer {
-	margin-top: 50px;
-	margin-bottom: 50px;
-
-	text-align: center;
-}
-
-/*footer a {
+nav a {
+	display: inline-block;
+	margin-top: 10px;
+	width: 140px;
 	background:#4E555D;
 	border-radius: 5px;
 	text-decoration: none;
@@ -56,53 +51,56 @@ footer {
 	display: inline-block;
 	text-align: center;
 	margin-right: 5px;
-}*/
 
-footer a {
-	width: 72px;
-	height: 72px;
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+a {
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+main {
+	width: 1000px;
+	margin: auto;
+	margin-top: -115px;
+	display: none;
+	position: relative;
+	z-index: 10;
+}
+
+main p {
 	display: inline-block;
-	background-repeat: no-repeat;
-	background-position: center;
-	padding: 0 90px;
 }
 
-footer #social_t {
-	background-image: url(img/twitter.png);
+main p:first-child {
+	width: 620px;
 }
 
-footer #social_s {
-	background-image: url(img/soundcloud.png);
+main p:nth-child(2) {
+	width: 295px;
+	float: right;
 }
 
-/*footer a:nth-child(1), footer a:nth-child(4) {
-	width:134px;
-} 
-
-footer a:nth-child(2), footer a:nth-child(3) {
-	width:160px;
-} 
-
-footer a:nth-child(4), footer a:last-child {
-	margin-right: 0px;
+a {
+	color: white;
 }
 
-footer a:last-child {
-	margin-top:17px;
-	width:100%;
-}*/
+footer {
+	margin-top: 50px;
+}
 
-/*iframe#mixcloud {
-	margin-bottom: 30px;
-}*/
+iframe {
+	width: 49%;
+}
 
 iframe#mixcloud {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	overflow: hidden;
-}
-
-iframe#soundcloud {
-	margin-bottom: 60px;
+	margin-right: 1%;
 }
