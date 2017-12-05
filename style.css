@@ -13,18 +13,56 @@ html, body {
 
 body {
 	font-family: 'Telex', sans-serif;
+	background-image: linear-gradient(0, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), linear-gradient(128deg, #AF2BBF, #5BC8AF);
 }
 
-#logo {
+#land {
+	background: black;
+	z-index: 1;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+
+#land ul {
+	display: block;
+	margin: 1.25rem;
+}
+
+#land ul li {
+	display: inline;
+	margin: 0 0.625rem;
+}
+
+#land ul li a {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.25s ease-in-out;
+}
+
+#land ul li a:hover {
+	opacity: 0.75;
+}
+
+#sun {
 	position: fixed;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	width: 25%;
+	width: 416px;
+	z-index: 0;
 }
 
-#logo:hover {
-	transform: translate(-50%, -50%) scale(1.05) !important;
+#logo {
+	width: 384px;
+	position: absolute;
+	top: -90px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .col {
@@ -35,87 +73,22 @@ body {
 }
 
 #quote {
-	left: 6%;
-	right: 66%;
+	display: block;
+	max-width: 384px;
+	margin: auto;
+	padding: 0 1rem;
 	text-align: justify;
 	font-style: italic;
-}
-
-nav {
-	right: 6%;
-	left: 66%;
-	transform: translateY(-50%) !important;
-	height: 100%;
-}
-
-.supernova {
-	width: 256px;
-	height: 256px;
-	text-align: center;
-	vertical-align: middle;
 	color: white;
-	font-size: 18px;
-	line-height: 256px;
-	background-size: contain;
-	transition: all 0.5s ease-in-out;
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	text-decoration: none;
-}
-
-#mixes {
-	background-image: url(rsc/supernova_gradient.png);
-	left: 32px;
-}
-
-#random {
-	background-image: url(rsc/supernova_black.png);
-	left: 156px;
-}
-
-.expand {
-	transition: all 0.5s ease-in-out;
-	cursor: pointer;
-}
-
-.expand:hover {
-	transform: translateY(-50%) scale(1.1);
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	#logo {
 		width: 256px;
+		top: -60px;
 	}
 
-	#quote {
-		bottom: 0;
-		left: 0;
-		right: 0;
-	}
-
-	nav {
-		transform: none !important;
-		position: fixed !important;
-		left: 0;
-		right: 0;
-	}
-
-	.col {
-		top: auto;
-	}
-
-	.supernova {
-		top: 48px;
-	}
-
-	#mixes {
-		left: -64px;
-	}
-
-	#random {
-		left: auto;
-		right: -64px;
+	#sun {
+		width: 320px;
 	}
 }
